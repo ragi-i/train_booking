@@ -1,0 +1,149 @@
+.booking-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-heading {
+  font-size: 2.0rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.title-container .title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.route-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.route {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-label {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.route input {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.check-seats-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-seats-btn:hover {
+  background-color: #0056b3;
+}
+
+.available-seats-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.booking-section {
+  margin-top: 30px;
+}
+
+.booking-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.seat-count-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 230px;
+  margin-top: 10px;
+  background-color: #e8f0fe;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.book-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #218838;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #c82333;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+.booked-seats {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.booked-seats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booked-seats li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
