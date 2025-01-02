@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-// import './UserLogin.css';
+
 
 const UserLogin = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -19,10 +19,9 @@ const UserLogin = () => {
       if (response.status === 200) {
         console.log('Success:', response.data);
 
-        // Save JWT token in localStorage
+       
         localStorage.setItem('token', response.data.token);
         console.log('token', response.data.token)
-        // Navigate to the seats page
         navigate('/seats');
       } else {
         console.error('Error:', response.statusText);

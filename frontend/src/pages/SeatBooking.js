@@ -6,7 +6,7 @@ function SeatBooking() {
   const [availableSeats, setAvailableSeats] = useState('');
   const [seatCount, setSeatCount] = useState('');
   const [message, setMessage] = useState('');
-  const [bookedSeats, setBookedSeats] = useState([]); // Only for the current session
+  const [bookedSeats, setBookedSeats] = useState([]); 
 
   const checkSeats = async () => {
     const token = localStorage.getItem('token');
@@ -39,11 +39,10 @@ function SeatBooking() {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setMessage(response.data.message);
-      setBookedSeats(response.data.seats); // Update only for this booking session
-      checkSeats(); // Refresh available seats
+      setBookedSeats(response.data.seats); 
+      checkSeats(); 
     } catch (err) {
-      // Handle error and reset session if necessary
-      setBookedSeats([]); // Clear session data on error
+      setBookedSeats([]); 
       setMessage(err.response?.data?.message || 'Error booking seats.');
     }
   };
@@ -57,8 +56,8 @@ function SeatBooking() {
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setMessage(response.data.message);
-      setBookedSeats([]); // Clear booked seats for the session
-      checkSeats(); // Refresh available seats
+      setBookedSeats([]); 
+      checkSeats(); 
     } catch (err) {
       setMessage('Error resetting seats.');
     }

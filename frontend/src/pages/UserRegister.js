@@ -37,12 +37,6 @@ const UserRegister = () => {
         <form onSubmit={handleSubmit}>
         <h3>Plan. Book. Travel. Seamlessly.</h3>
           <h1>Create Account</h1>
-          {/* <div className="social-container">
-            <a href="#" className="social"><i className="fa fa-facebook"></i></a>
-            <a href="#" className="social"><i className="fa fa-google"></i></a>
-            <a href="#" className="social"><i className="fa fa-linkedin"></i></a>
-          </div>
-          <span>or use your email for registration</span> */}
           
           <input
             type="text"
@@ -78,7 +72,6 @@ const UserRegister = () => {
         <div className="overlay">
           <div className="overlay-panel overlay-right">
             <h1>From Dreams to Destinations,</h1>
-            {/* <p>Enter your details and start your journey with us.</p> */}
             <p>We’ve Got Your Seat Covered!</p>
           </div>
         </div>
